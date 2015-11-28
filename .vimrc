@@ -7,6 +7,8 @@ Plug 'junegunn/vim-easy-align'
 " Color Scheme
 Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
+Plug 'joshdick/onedark.vim'
+Plug 'joshdick/airline-onedark.vim'
 
 " GitGutter
 Plug 'airblade/vim-gitgutter'
@@ -45,9 +47,10 @@ let mapleader=","
 
 "UI Things
 syntax on " turns syntax highlighting on
-colorscheme gruvbox
+colorscheme onedark
 "colorscheme solarized " Set colorscheme
-" set background=dark
+"
+ set background=dark
 
 "if strftime("%H") < 15  && strftime("%H") > 7 " Sets light or dark based on time
 "    set background=light
@@ -81,7 +84,7 @@ set expandtab
 :set guioptions-=R
 :set guioptions-=r
 
-:let g:airline_theme='gruvbox' " Set theme of airline
+:let g:airline_theme='onedark' " Set theme of airline
 
 au VimEnter *  NERDTree " Open NERDTree automatically
 
