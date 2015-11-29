@@ -65,6 +65,8 @@ source $ZSH/oh-my-zsh.sh
 alias adb="~/Library/Android/sdk/platform-tools/adb"
 alias school="cd ~/Dropbox/12th\ Grade/"
 alias cleanTex="rm *.log; rm *.aux; rm *.fdb_latexmk; rm *.synctex.gz; rm *.fls"
+alias connect="ssh aravind@192.168.1.20"
+alias transfer="sftp aravind@192.168.1.20"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

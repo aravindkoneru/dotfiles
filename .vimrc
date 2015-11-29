@@ -9,6 +9,8 @@ Plug 'morhetz/gruvbox'
 Plug 'whatyouhide/vim-gotham'
 Plug 'joshdick/onedark.vim'
 Plug 'joshdick/airline-onedark.vim'
+Plug 'idbrii/vim-sandydune'
+Plug 'jonathanfilip/vim-lucius'
 
 " GitGutter
 Plug 'airblade/vim-gitgutter'
@@ -43,11 +45,19 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 call plug#end()
 
 " map leader
-let mapleader="," 
+let mapleader=","
 
 "UI Things
 syntax on " turns syntax highlighting on
-colorscheme onedark
+
+if has('gui_running') "Different colors for gvim and console vim
+    colorscheme kolor
+    :let g:airline_theme='kolor' " Set theme of airline
+else
+    colorscheme lucius
+    "let g:seoul256_background = 237 " set background darkness of seoul256
+    :let g:airline_theme='lucius' " Set theme of airline
+endif
 "colorscheme solarized " Set colorscheme
 "
  set background=dark
@@ -70,7 +80,7 @@ set wildmenu " visual autocomplete for command menu
 set incsearch " search as characters are entered
 set hlsearch " highlights search matches
 " unhighlight after we are done searching
-nnoremap <leader><space> :nohlsearch<CR> 
+nnoremap <leader><space> :nohlsearch<CR>
 
 " For tabbing and stuff
 filetype plugin indent on
@@ -84,7 +94,6 @@ set expandtab
 :set guioptions-=R
 :set guioptions-=r
 
-:let g:airline_theme='onedark' " Set theme of airline
 
 au VimEnter *  NERDTree " Open NERDTree automatically
 
@@ -93,13 +102,13 @@ autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 
-"Text wrapping 
+"Text wrapping
 au BufRead,BufNewFile *.md setlocal textwidth=100
 au BufRead,BufNewFile *.txt setlocal textwidth=100
 au BufRead,BufNewFile *.tex setlocal textwidth=100
 
 " Auto reload .vimrc whenever there is a change
-map <leader>vimrc :tabe ~/.vim/.vimrc<cr> 
+map <leader>vimrc :tabe ~/.vim/.vimrc<cr>
 autocmd bufwritepost .vimrc source $MYVIMRC
 
 :au FocusLost * :wa " autosave file
