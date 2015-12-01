@@ -51,8 +51,8 @@ let mapleader=","
 syntax on " turns syntax highlighting on
 
 if has('gui_running') "Different colors for gvim and console vim
-    colorscheme kolor
-    :let g:airline_theme='kolor' " Set theme of airline
+    colorscheme gruvbox
+    :let g:airline_theme='gruvbox' " Set theme of airline
 else
     colorscheme lucius
     "let g:seoul256_background = 237 " set background darkness of seoul256
