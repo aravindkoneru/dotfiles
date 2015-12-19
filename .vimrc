@@ -54,9 +54,9 @@ if has('gui_running') "Different colors for gvim and console vim
     colorscheme gruvbox
     :let g:airline_theme='gruvbox' " Set theme of airline
 else
-    colorscheme lucius
+    colorscheme gruvbox
     "let g:seoul256_background = 237 " set background darkness of seoul256
-    :let g:airline_theme='lucius' " Set theme of airline
+    :let g:airline_theme='gruvbox' " Set theme of airline
 endif
 "colorscheme solarized " Set colorscheme
 "
