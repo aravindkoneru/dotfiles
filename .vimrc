@@ -16,7 +16,8 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'airblade/vim-gitgutter'
 
 " Airline
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Auto brackets and stuff
 Plug 'Raimondi/delimitMate'
@@ -53,7 +54,7 @@ let mapleader=","
 "UI Things
 syntax on " turns syntax highlighting on
 colorscheme solarized
-:let g:airline_theme='solarized' " Set theme of airline
+":let g:airline_theme='solarized' " Set theme of airline
 set background=dark
 
 set number " show line numbers
