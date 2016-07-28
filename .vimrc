@@ -25,6 +25,9 @@ Plug 'Raimondi/delimitMate'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1 " activates the plugin
 
+" scala syntax highlighting
+Plug 'derekwyatt/vim-scala'
+
 " Group dependencies, vim-snippets depends on ultisnips
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
@@ -49,26 +52,9 @@ let mapleader=","
 
 "UI Things
 syntax on " turns syntax highlighting on
-
-if has('gui_running') "Different colors for gvim and console vim
-    colorscheme gruvbox
-    :let g:airline_theme='gruvbox' " Set theme of airline
-else
-    colorscheme gruvbox
-    "let g:seoul256_background = 237 " set background darkness of seoul256
-    :let g:airline_theme='gruvbox' " Set theme of airline
-endif
-"colorscheme solarized " Set colorscheme
-"
- set background=dark
-
-"if strftime("%H") < 15  && strftime("%H") > 7 " Sets light or dark based on time
-"    set background=light
-"   " colorscheme gotham
-"else
-"   "colorscheme solarized
-"   set background=dark
-"endif
+colorscheme solarized
+:let g:airline_theme='solarized' " Set theme of airline
+set background=dark
 
 set number " show line numbers
 set cursorline " highlight the current line
