@@ -8,6 +8,10 @@
   "homepage": "https://hyperterm.org",
   "dependencies": {
     "hyperterm-dark-macos": "latest",
-    "hyperterm-bold-tab": "latest"
+    "hyperterm-bold-tab": "latest",
+    "hyperterm-blink": "latest",
+    "hyperline": "latest",
+    "hyperterm-paste": "latest",
+    "hyperterm-tab-icons": "latest"
   }
 }

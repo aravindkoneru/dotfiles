@@ -65,12 +65,9 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    //'hyperterm-panda'
-    //'hyperterm-gruvbox-dark'
-    'hyperterm-dark-macos',
-    'hyperterm-bold-tab'
-  ],
+  plugins: [//'hyperterm-panda'
+  //'hyperterm-gruvbox-dark'
+  'hyperterm-dark-macos', 'hyperterm-bold-tab', 'hyperterm-blink', "hyperline", "hyperterm-paste", "hyperterm-tab-icons"],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
