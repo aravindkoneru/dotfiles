@@ -23,6 +23,9 @@ let g:rainbow_active = 1 " activates the plugin
 " scala syntax highlighting
 Plug 'derekwyatt/vim-scala'
 
+" NERDTRee
+Plug 'scrooloose/nerdtree'
+
 " Add plugins to &runtimepath
 call plug#end()
 
