@@ -1,16 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 
 " Color Scheme
 Plug 'morhetz/gruvbox'
-Plug 'whatyouhide/vim-gotham'
-Plug 'joshdick/onedark.vim'
-Plug 'joshdick/airline-onedark.vim'
-Plug 'idbrii/vim-sandydune'
-Plug 'jonathanfilip/vim-lucius'
 
 " GitGutter
 Plug 'airblade/vim-gitgutter'
@@ -29,22 +23,6 @@ let g:rainbow_active = 1 " activates the plugin
 " scala syntax highlighting
 Plug 'derekwyatt/vim-scala'
 
-" Group dependencies, vim-snippets depends on ultisnips
-" Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using git URL
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
-" Plugin options
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -53,9 +31,10 @@ let mapleader=","
 
 "UI Things
 syntax on " turns syntax highlighting on
-colorscheme solarized
-:let g:airline_theme='solarized' " Set theme of airline
-set background=dark
+if has('gui_running')
+    colorscheme gruvbox
+    set background=dark
+endif
 
 set number " show line numbers
 set cursorline " highlight the current line
@@ -66,7 +45,6 @@ set wildmenu " visual autocomplete for command menu
 
 set incsearch " search as characters are entered
 set hlsearch " highlights search matches
-" unhighlight after we are done searching
 nnoremap <leader><space> :nohlsearch<CR>
 
 " For tabbing and stuff
@@ -81,8 +59,8 @@ set expandtab
 :set guioptions-=R
 :set guioptions-=r
 
-
 au VimEnter *  NERDTree " Open NERDTree automatically
+let NERDTreeIgnore=['\.pyc$']
 
 "Spell checking
 autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us

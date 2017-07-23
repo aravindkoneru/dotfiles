@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/aravindkoneru/Dropbox/College Stuff'
 let g:netrw_dirhist_2='/Users/aravindkoneru/Dropbox/FRC/Java Lessons'
 let g:netrw_dirhist_3='/Users/aravindkoneru/Dropbox'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/aravindkoneru/Dropbox/Senior Year/AP Lit'
 let g:netrw_dirhist_5='/Users/aravindkoneru/.vim'
 let g:netrw_dirhist_6='/Users/aravindkoneru/git/FTC_9042/FtcRobotController/src/main/assets/tests'
 let g:netrw_dirhist_7='/Users/aravindkoneru/Dropbox/12th Grade/IPLE'
+let g:netrw_dirhist_8='/Users/aravindkoneru/Downloads/IntroHTMLCode'
