@@ -1,3 +1,6 @@
+#Go home
+cd ~
+
 #Install xcode tools
 xcode-select --install
 
@@ -29,6 +32,8 @@ brew cask install transmission
 brew cask install dropbox
 brew cask install cyberduck
 brew cask install vlc
+brew cask install macvim 
+brew install vim --with-override-system-vi
 
 #Setup git
 mkdir ~/git/
@@ -42,3 +47,8 @@ ssh-add -L ~/.ssh/id_rsa
 
 pbcopy < ~/.ssh/id_rsa.pub
 echo "ssh key copied to clipboard, add it to github"
+
+#Set up vim 
+git clone https://github.com/aravindkoneru/dotfiles.git
+ln -s ~/dotfiles/.vimrc 
+ln -s ~/dotfiles/.vim 
