@@ -52,3 +52,10 @@ echo "ssh key copied to clipboard, add it to github"
 git clone https://github.com/aravindkoneru/dotfiles.git
 ln -s ~/dotfiles/.vimrc 
 ln -s ~/dotfiles/.vim 
+
+#Install fish and oh-my-fish
+brew install fish
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
+
+curl -L https://get.oh-my.fish | fish
