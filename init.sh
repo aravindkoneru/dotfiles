@@ -33,7 +33,10 @@ brew cask install dropbox
 brew cask install cyberduck
 brew cask install vlc
 brew cask install macvim 
+brew cask install mactex
+brew cask install zotero
 brew install vim --with-override-system-vi
+brew cask install spotify
 
 #Setup git
 mkdir ~/git/
@@ -59,3 +62,4 @@ echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 
 curl -L https://get.oh-my.fish | fish
+omf install will
