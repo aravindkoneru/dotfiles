@@ -22,6 +22,7 @@ brew install r
 brew install wget
 brew install nmap
 brew install git
+brew install tmux
 
 #Install fonts
 brew cask install hack
