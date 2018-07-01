@@ -7,6 +7,8 @@ xcode-select --install
 #Install homebrew and cask
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/cask
+brew tap caskroom/fonts
+brew update
 
 #Install languages
 brew install opam
@@ -14,11 +16,16 @@ brew install ocaml
 brew install node
 brew install python3
 brew cask install java
+brew install r
 
 #Install tools
 brew install wget
 brew install nmap
 brew install git
+
+#Install fonts
+brew cask install hack
+brew cask install font-source-code-pro
 
 #Install Programs
 brew cask install the-unarchiver
@@ -52,3 +59,6 @@ echo "ssh key copied to clipboard, add it to github"
 git clone https://github.com/aravindkoneru/dotfiles.git
 ln -s ~/dotfiles/.vimrc 
 ln -s ~/dotfiles/.vim 
+
+#set up pip
+sudo easy_install pip
