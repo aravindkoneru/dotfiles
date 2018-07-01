@@ -1,6 +1,14 @@
-! hard contrast: *background: #1d2021
-*background: #282828
-! soft contrast: *background: #32302f
+# enable colors
+XTerm*termName: xterm-256color
+
+# Font stuff
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+
+# Gruvbox dark
+! soft contrast: 
+*background: #32302f
 *foreground: #ebdbb2
 ! Black + DarkGrey
 *color0:  #282828
