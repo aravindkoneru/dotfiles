@@ -45,6 +45,7 @@ brew cask install mactex
 brew cask install zotero
 brew install vim --with-override-system-vi
 brew cask install spotify
+brew cask install intellij-idea
 
 #Setup git
 mkdir ~/git/

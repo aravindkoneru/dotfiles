@@ -62,7 +62,6 @@ set expandtab
 :set guioptions-=R
 :set guioptions-=r
 
-au VimEnter *  NERDTree " Open NERDTree automatically
 let NERDTreeIgnore=['\.pyc$']
 
 "Spell checking
