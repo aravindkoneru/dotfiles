@@ -34,14 +34,24 @@ let mapleader=","
 
 "UI Things
 syntax on " turns syntax highlighting on
+set background=dark
+
+colorscheme gruvbox
+if strftime("%H") < 17 && strftime("%H") > 6
+  "set background=light
+else
+  set background=dark
+endif
+
 if has('gui_running')
     colorscheme gruvbox
-    set background=dark
+    set guifont=Hack:h14
 endif
 
 set number " show line numbers
-set cursorline " highlight the current line
+" set cursorline " highlight the current line
 filetype indent on " indenting for file types
+filetype plugin on
 set lazyredraw " only redraw when needed
 set showmatch " highlight matching brackets
 set wildmenu " visual autocomplete for command menu
@@ -74,10 +84,6 @@ au BufRead,BufNewFile *.md setlocal textwidth=100
 au BufRead,BufNewFile *.txt setlocal textwidth=100
 au BufRead,BufNewFile *.tex setlocal textwidth=100
 
-" Auto reload .vimrc whenever there is a change
-map <leader>vimrc :tabe ~/.vim/.vimrc<cr>
-autocmd bufwritepost .vimrc source $MYVIMRC
-
-:au FocusLost * :wa " autosave file
-
-:set mouse=nicr
+"Hot-reload
+set autoread
+set backspace=indent,eol,start
