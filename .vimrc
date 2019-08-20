@@ -20,11 +20,11 @@ Plug 'Raimondi/delimitMate'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1 " activates the plugin
 
-" scala syntax highlighting
-Plug 'derekwyatt/vim-scala'
-
 " NERDTRee
 Plug 'scrooloose/nerdtree'
+
+" Syntax support
+Plug 'sheerun/vim-polyglot'
 
 " Add plugins to &runtimepath
 call plug#end()
