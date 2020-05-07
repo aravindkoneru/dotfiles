@@ -87,3 +87,9 @@ au BufRead,BufNewFile *.tex setlocal textwidth=100
 "Hot-reload
 set autoread
 set backspace=indent,eol,start
+
+"disable the arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
