@@ -1,4 +1,8 @@
 alias cloze="ssh aravind@cloze.cs.umd.edu"
+alias weather="curl v2.wttr.in"
+
+#alias ubuntu="akoneru@192.168.1.101"
+#alias openlab="akoneru@openlab.umiacs.umd.edu"
 
 function ubuntu
     ssh akoneru@192.168.1.101
@@ -8,5 +12,10 @@ function remote
     ssh -p 543 akoneru@aravind.ddns.net
 end
 
-# opam configuration
-source /Users/aravindkoneru/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+function openlab
+    ssh akoneru@openlab.umiacs.umd.edu
+end
+
+alias dc="docker-compose"
+
+set PATH $PATH "/Users/aravindkoneru/Library/Python/3.8/bin"
